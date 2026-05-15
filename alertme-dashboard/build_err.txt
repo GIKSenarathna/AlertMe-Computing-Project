@@ -1,0 +1,59 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 11 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 257ms
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "
+C:\Users\kavya\AppData\R
+oaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ([31mΓ£ù[39m Bu   
+ ild failed in 257ms    
+:String) [], Remote    
+Exception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+[31merror during build:
+[31mCould not resolve 
+"./App.css" from 
+"src/App.jsx"[31m
+file: [36mC:/Users/kavy
+a/.gemini/antigravity/sc
+ratch/alertme-dashboard/
+src/App.jsx[31m
+    at getRollupError (f
+ile:///C:/Users/kavya/.g
+emini/antigravity/scratc
+h/alertme-dashboard/node
+_modules/rollup/dist/es/
+shared/parseAst.js:402:4
+1)
+    at error (file:///C:
+/Users/kavya/.gemini/ant
+igravity/scratch/alertme
+-dashboard/node_modules/
+rollup/dist/es/shared/pa
+rseAst.js:398:42)
+    at ModuleLoader.hand
+leInvalidResolvedId (fil
+e:///C:/Users/kavya/.gem
+ini/antigravity/scratch/
+alertme-dashboard/node_m
+odules/rollup/dist/es/sh
+ared/node-entry.js:21710
+:24)
+    at file:///C:/Users/
+kavya/.gemini/antigravit
+y/scratch/alertme-dashbo
+ard/node_modules/rollup/
+dist/es/shared/node-entr
+y.js:21670:26[39m

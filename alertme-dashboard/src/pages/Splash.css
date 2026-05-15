@@ -1,0 +1,112 @@
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #051F45 100%);
+    color: white;
+}
+
+.branding {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeIn 1s ease-out;
+}
+
+.splash-icon {
+    color: var(--color-danger);
+    /* Accent red */
+    margin-bottom: 16px;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.splash-title {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.splash-subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.loading-bar-container {
+    width: 250px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.loading-bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-info);
+    /* Blue fill */
+    animation: loadProgress 2s ease-in-out forwards;
+}
+
+.loading-text {
+    font-size: 13px;
+    opacity: 0.6;
+    font-weight: 500;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes loadProgress {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 60%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}

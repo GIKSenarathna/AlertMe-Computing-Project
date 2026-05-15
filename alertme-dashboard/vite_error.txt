@@ -1,0 +1,11 @@
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m???[39m 26 modules transformed.
+[31m???[39m Build failed in 218ms
+[31merror during build:
+[31mCould not resolve "./App.css" from "src/App.jsx"[31m
+file: [36mC:/Users/kavya/.gemini/antigravity/scratch/alertme-dashboard/src/App.jsx[31m
+    at getRollupError (file:///C:/Users/kavya/.gemini/antigravity/scratch/alertme-dashboard/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+    at error (file:///C:/Users/kavya/.gemini/antigravity/scratch/alertme-dashboard/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/kavya/.gemini/antigravity/scratch/alertme-dashboard/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)
+    at file:///C:/Users/kavya/.gemini/antigravity/scratch/alertme-dashboard/node_modules/rollup/dist/es/shared/node-entry.js:21670:26[39m

@@ -1,0 +1,43 @@
+/* App.css - Global app-level styles */
+#root {
+    min-height: 100vh;
+    width: 100%;
+}
+
+@media print {
+    /* 1. Reset all fixed heights and scrollable containers so the browser can print the entire length of the page */
+    body, html, #root, .dashboard-container, .main-content, .content-wrapper, .analytics-page {
+        height: auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        margin: 0 !important;
+    }
+
+    /* 2. Hide the sidebar navigation so the PDF is clean */
+    .sidebar {
+        display: none !important;
+    }
+
+    /* 3. Hide the export buttons themselves */
+    .header-actions-group {
+        display: none !important;
+    }
+
+    /* 4. Force background colors to print (fixes dark mode charts printing white) */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* 5. Prevent charts from being split across two pages */
+    .chart-card {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* 6. Convert side-by-side grids to stacked blocks for A4 portrait orientation */
+    .charts-grid {
+        display: block !important;
+    }
+}
